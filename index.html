@@ -1,21 +1,57 @@
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <title>Alien Invasion</title>
-  <link rel="stylesheet" href="base.css" type="text/css" />
-  <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-  <meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-</head>
-<body>
-  <div id='container'>
-    <canvas id='game' width='320' height='480'></canvas>
-  </div>
-  <script src='engine.js'></script>
-  <script src='game.js'></script>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <title>NGT-3 Zombie Invasie</title>
+
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="base.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-5 col-xs-offset-2">
+          <div id='container'>
+            <canvas id='game' width='320' height='480'></canvas>
+            <div class="instructions">
+              <strong>Spatie</strong> = schieten
+              <br />
+              <strong>Pijltje link</strong>: beweeg naar links
+              <br />
+              <strong>Pijltje rechts</strong>: beweeg naar rechts
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <img src="images/title-and-zombie.png" class="img-responsive" />
+        <div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src='engine.js'></script>
+    <script src='game.js'></script>
+
+  </body>
 </html>
 
 
