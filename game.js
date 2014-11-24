@@ -1,6 +1,6 @@
 var sprites = {
  ship: { sx: 0, sy: 0, w: 37, h: 42, frames: 1 },
- missile: { sx: 0, sy: 30, w: 2, h: 10, frames: 1 },
+ missile: { sx: 9, sy: 43, w: 2, h: 10, frames: 1 },
  enemy_purple: { sx: 37, sy: 0, w: 42, h: 43, frames: 1 },
  enemy_bee: { sx: 79, sy: 0, w: 37, h: 43, frames: 1 },
  enemy_ship: { sx: 116, sy: 0, w: 42, h: 43, frames: 1 },
@@ -39,8 +39,8 @@ var startGame = function() {
     Game.setBoard(1,new Starfield(50,0.6,100));
     Game.setBoard(2,new Starfield(100,1.0,50));
   }  
-  Game.setBoard(3,new TitleScreen("Alien Invasion", 
-                                  "Press fire to start playing",
+  Game.setBoard(3,new TitleScreen("NGT-3 Zombie Invasie", 
+                                  "Duk op de spatiebalk om te spelen",
                                   playGame));
 };
 
@@ -67,14 +67,14 @@ var playGame = function() {
 };
 
 var winGame = function() {
-  Game.setBoard(3,new TitleScreen("You win!", 
-                                  "Press fire to play again",
+  Game.setBoard(3,new TitleScreen("Gewonnen!", 
+                                  "Druk op spatie om opnieuw te spelen",
                                   playGame));
 };
 
 var loseGame = function() {
-  Game.setBoard(3,new TitleScreen("You lose!", 
-                                  "Press fire to play again",
+  Game.setBoard(3,new TitleScreen("Verloren!", 
+                                  "Probeer het nog eens! Druk spatie.",
                                   playGame));
 };
 
